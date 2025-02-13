@@ -1,0 +1,7 @@
+# Ignore environment and compiled files
+venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+git add .gitignore
