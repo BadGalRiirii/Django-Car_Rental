@@ -51,7 +51,7 @@ class Booking(models.Model):
     return_date = models.DateField()
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='Pending')
-    payment_status = models.CharField(max_length=20, choices=PAYMENT_STATUSES, default='Pending')  # 🔥 Added this line
+    payment_status = models.CharField(max_length=20, choices=PAYMENT_STATUSES, default='Pending') 
 
     def __str__(self):
         return f"{self.user.username} - {self.vehicle.name} ({self.status})"
